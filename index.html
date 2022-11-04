@@ -66,7 +66,7 @@
     </div>
   
     <div class="news-alert bottom">
-      <a data-bs-toggle="modal" data-bs-target="#news2">決勝戦進出者発表ついて</a>
+      <a data-bs-toggle="modal" data-bs-target="#news2">決勝戦進出者発表</a>
     </div>
   
   </div>
@@ -109,470 +109,37 @@
         <h5 class="modal-title" id="news2modal"></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body message" id="app">
+      <div class="modal-body message" id="list">
         <div class="title">
-          <h4><strong>決勝戦進出者発表について</strong></h4>
+          <h4><strong>決勝戦進出者発表</strong></h4>
         </div>
-        <p class="text-p">決勝戦進出者の方には、個別にメールにてご案内させていただきます。<br>
+        <!-- <p class="text-p">決勝戦進出者の方には、個別にメールにてご案内させていただきます。<br>
           決勝戦へのエントリー方法について記載しております。<br>
           エントリー期間終了後、11月初旬に公式サイト（当サイト）上で氏名・チーム名を発表いたします。</p>
           
-          <p class="text-p"><strong><u>【決勝戦エントリー期間】</u></strong></p>
+          <p class="text-p"><strong><u>【決勝戦エントリー期間】</u></strong></p> -->
           
-          <p class="text-p">2022年10月1日(土)～10月31日(月)<br>※締切日23時59分まで有効</p>
+          <!-- <p class="text-p">2022年10月1日(土)～10月31日(月)<br>※締切日23時59分まで有効</p> -->
 
+          <div id="list">
+            <ul class="entrants">
+              <li v-for="stylist in stylists">{{stylist.name}} <span v-if="stylist.team === true">※</span></li>
+            </ul>
+          </div>
 
+          <p>〈氏名五十音順〉<br>
+            ※はチームエントリーの方々です。</p>
+
+            <hr>
+
+          <p class="text-p">
+            決勝戦エントリー期間が終了しましたので、決勝戦進出者&チームを発表させていただきます。<br>
+            最終審査結果発表会は、2022年12月13日(火)KAMI CHARISMA 2023アワード内にて開催いたします。<br>
+            優勝作品の発表を楽しみにお待ちください。
+          </div>
          
 
-          <div class="header">
-  
-            <dl>
-              <dt>参加種別</dt>
-            </dl>
-              
-            <dl>
-                <dt>名前</dt>
-            </dl>
-              
-            <dl>
-                <dt>フリガナ</dt>
-            </dl>
-            
-            <dl>
-                <dt>勤務先</dt>
-            </dl>
-            
-            <!-- <dl>
-                <dt>所属・勤務先</dt>
-                <dd>ALLY</dd>
-            </dl> -->
-            
-            <dl>
-                <dt>都道府県</dt>
-            <!--     <dd>東京都</dd>
-                <dd>東京都</dd> -->
-            </dl>
-            </div>
-            
-            <!-- 1 -->
-            <div class="list">
-              <dl>
-              <dd>個人</dd>
-            </dl>
-              
-            <dl>
-                <dd>阿部<br class="mobile-break">吉晃</dd>
-            </dl>
-              
-            <dl>
-                <dd>アベ<br class="mobile-break">ヨシアキ</dd>
-            </dl>
-            
-            <dl>
-                <dd>BELLE<br class="mobile-break">表参道</dd>
-            </dl>
-            
-            <!-- <dl>
-                <dt>所属・勤務先</dt>
-                <dd>ALLY</dd>
-            </dl> -->
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 2 -->
-            <div class="list">
-              <dl>
-              <dd>チーム</dd>
-            </dl>
-              
-            <dl>
-                <dd>大田JAPAN</dd>
-            </dl>
-              
-            <dl>
-                <dd>オオタ<br class="mobile-break">ジャパン</dd>
-            </dl>
-            
-            <dl>
-                <dd>OCEAN TOKYO<br class="mobile-break">OVER</dd>
-            </dl>
-            
-            <!-- <dl>
-                <dt>所属・勤務先</dt>
-                <dd>ALLY</dd>
-            </dl> -->
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 3 -->
-            <div class="list">
-              <dl>
-              <dd>チーム</dd>
-            </dl>
-              
-            <dl>
-                <dd>菊地<br class="mobile-break">尊</dd>
-            </dl>
-              
-            <dl>
-                <dd>キクチ<br class="mobile-break">タケル</dd>
-            </dl>
-            
-            <dl>
-                <dd>JOMELL.</dd>
-            </dl>
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 4 -->
-            <div class="list">
-              <dl>
-              <dd>個人</dd>
-            </dl>
-              
-            <dl>
-                <dd>坂本<br class="mobile-break">たかまさ</dd>
-            </dl>
-              
-            <dl>
-                <dd>サカモト<br class="mobile-break">タカマサ</dd>
-            </dl>
-            
-            <dl>
-                <dd>ACA</dd>
-            </dl>
-            
-            <dl>
-                <dd>北海道</dd>
-            </dl>
-            </div>
-            <!-- 5 -->
-            <div class="list">
-              <dl>
-              <dd>個人</dd>
-            </dl>
-              
-            <dl>
-                <dd>島崎<br class="mobile-break">力斗</dd>
-            </dl>
-              
-            <dl>
-                <dd>シマザキ<br class="mobile-break">リキト</dd>
-            </dl>
-            
-            <dl>
-                <dd>OCEAN TOKYO</dd>
-            </dl>
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 6 -->
-            <div class="list">
-              <dl>
-              <dd>チーム</dd>
-            </dl>
-              
-            <dl>
-                <dd>末石<br class="mobile-break">稔</dd>
-            </dl>
-              
-            <dl>
-                <dd>スエイシ<br class="mobile-break">ミノル</dd>
-            </dl>
-            
-            <dl>
-                <dd>PEEK-A-BOO<br class="mobile-break">原宿</dd>
-            </dl>
-            
-            <!-- <dl>
-                <dt>所属・勤務先</dt>
-                <dd>ALLY</dd>
-            </dl> -->
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 7 -->
-            <div class="list">
-              <dl>
-              <dd>チーム</dd>
-            </dl>
-              
-            <dl>
-                <dd>田代<br class="mobile-break">時男</dd>
-            </dl>
-              
-            <dl>
-                <dd>タシロ<br class="mobile-break">トキオ</dd>
-            </dl>
-            
-            <dl>
-                <dd>SHIMA</dd>
-            </dl>
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 8 -->
-            <div class="list">
-              <dl>
-              <dd>チーム</dd>
-            </dl>
-              
-            <dl>
-                <dd>CHO</dd>
-            </dl>
-              
-            <dl>
-                <dd>チョウ</dd>
-            </dl>
-            
-            <dl>
-                <dd>ANTI</dd>
-            </dl>
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 9 -->
-            <div class="list">
-              <dl>
-              <dd>個人</dd>
-            </dl>
-              
-            <dl>
-                <dd>堤<br class="mobile-break">大輔</dd>
-            </dl>
-              
-            <dl>
-                <dd>ツツミ<br class="mobile-break">ダイスケ</dd>
-            </dl>
-            
-            <dl>
-                <dd>LiLoinveve</dd>
-            </dl>
-            
-            
-            <dl>
-                <dd>大阪府</dd>
-            </dl>
-            </div>
-            <!-- 10 -->
-            <div class="list">
-              <dl>
-              <dd>チーム</dd>
-            </dl>
-              
-            <dl>
-                <dd>箱崎<br class="mobile-break">貴彦</dd>
-            </dl>
-              
-            <dl>
-                <dd>ハコザキ<br class="mobile-break">タカヒコ</dd>
-            </dl>
-            
-            <dl>
-                <dd>PEEK-A-BOO<br class="mobile-break">原宿</dd>
-            </dl>
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 11 -->
-            <div class="list">
-              <dl>
-              <dd>チーム</dd>
-            </dl>
-              
-            <dl>
-                <dd>橋ヶ谷<br class="mobile-break">桃子</dd>
-            </dl>
-              
-            <dl>
-                <dd>ハシガヤ<br class="mobile-break">モモコ</dd>
-            </dl>
-            
-            <dl>
-                <dd>PEEK-A-BOO<br class="mobile-break">銀座<br class="mobile-break">
-                  並木通り</dd>
-            </dl>
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 12 -->
-            <div class="list">
-              <dl>
-              <dd>個人</dd>
-            </dl>
-              
-            <dl>
-                <dd>張替<br class="mobile-break">光輝</dd>
-            </dl>
-              
-            <dl>
-                <dd>ハリガエ<br class="mobile-break">コウキ</dd>
-            </dl>
-            
-            <dl>
-                <dd>ヒロ銀座<br class="mobile-break">バーバー<br class="mobile-break">ショップ</dd>
-            </dl>
-            
-            
-            <dl>
-                <dd>神奈川県</dd>
-            </dl>
-            </div>
-            <!-- 13 -->
-            <div class="list">
-              <dl>
-              <dd>個人</dd>
-            </dl>
-              
-            <dl>
-                <dd>藤原<br class="mobile-break">愛莉</dd>
-            </dl>
-              
-            <dl>
-                <dd>フジハラ<br class="mobile-break">アイリ</dd>
-            </dl>
-            
-            <dl>
-                <dd>Belle<br class="mobile-break">表参道</dd>
-            </dl>
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 14 -->
-            <div class="list">
-              <dl>
-              <dd>個人</dd>
-            </dl>
-              
-            <dl>
-                <dd>藤巻<br class="mobile-break">巡日人</dd>
-            </dl>
-              
-            <dl>
-                <dd>フジマキ<br class="mobile-break">ユキヒト</dd>
-            </dl>
-            
-            <dl>
-                <dd>romp</dd>
-            </dl>
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 15 -->
-            <div class="list">
-              <dl>
-              <dd>個人</dd>
-            </dl>
-              
-            <dl>
-                <dd>峰田<br class="mobile-break">大暉</dd>
-            </dl>
-              
-            <dl>
-                <dd>ミネタ<br class="mobile-break">ヒロキ</dd>
-            </dl>
-            
-            <dl>
-                <dd>OCEAN TOKYO<br class="mobile-break">WHITE</dd>
-            </dl>
-            
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 16 -->
-            <div class="list">
-              <dl>
-              <dd>チーム</dd>
-            </dl>
-              
-            <dl>
-                <dd>山野<br class="mobile-break">俊貴</dd>
-            </dl>
-              
-            <dl>
-                <dd>ヤマノ<br class="mobile-break">トシキ</dd>
-            </dl>
-            
-            <dl>
-                <dd>Lond</dd>
-            </dl>
-            
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 17 -->
-            <div class="list">
-              <dl>
-              <dd>チーム</dd>
-            </dl>
-              
-            <dl>
-                <dd>横井<br class="mobile-break">澄愛</dd>
-            </dl>
-              
-            <dl>
-                <dd>ヨコイ<br class="mobile-break">スミエ</dd>
-            </dl>
-            
-            <dl>
-                <dd>cachecache<br class="mobile-break">表参道</dd>
-            </dl>
-            
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            <!-- 15 -->
-            <div class="list">
-              <dl>
-              <dd>チーム</dd>
-            </dl>
-              
-            <dl>
-                <dd>RYUSEI</dd>
-            </dl>
-              
-            <dl>
-                <dd>リュウセイ</dd>
-            </dl>
-            
-            <dl>
-                <dd>PELE</dd>
-            </dl>
-            
-            
-            <dl>
-                <dd>東京都</dd>
-            </dl>
-            </div>
-            
+          
             
       </div>
       <div class="modal-footer">
@@ -1118,4 +685,5 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/list.js"></script>
 </html>
