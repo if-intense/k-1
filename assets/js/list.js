@@ -4,7 +4,7 @@ var vm = new Vue ({
         stylists: [
             {id: 1, name: "阿部 吉晃（ALLY・東京都）", team: false},
             {id: 2, name: "大田JAPAN（OCEAN TOKYO OVER・東京都）", team: true},
-            {id: 3, name: "菊地 尊（JOMELL・東京都）", team: true},
+            {id: 3, name: "菊地 尊（JOMELL.・東京都）", team: true},
             {id: 4, name: "坂本 たかまさ（ACA・北海道）", team: false},
             {id: 5, name: "島崎 力斗（OCEAN TOKYO・東京都）", team: false},
             {id: 6, name: "末石 稔（PEEK-A-BOO 原宿・東京都）", team: true},
