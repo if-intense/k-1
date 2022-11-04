@@ -10,7 +10,7 @@ var vm = new Vue ({
             {id: 6, name: "末石 稔（PEEK-A-BOO 原宿・東京都）", team: true},
             {id: 7, name: "田代 時男（SHIMA・東京都）", team: true},
             {id: 8, name: "CHO （ANTI・東京都）", team: true},
-            {id: 9, name: "堤 大輔（LiLoinveve・大阪府）", team: false},
+            {id: 9, name: "堤 大輔（LiLoinvene・大阪府）", team: false},
             {id: 10, name: "箱崎 貴彦（PEEK-A-BOO 原宿・東京都）", team: true},
             {id: 11, name: "橋ヶ谷 桃子（PEEK-A-BOO銀座並木通り・東京都）", team: true},
             {id: 12, name: "張替 光輝（ヒロ銀座バーバーショップ ・神奈川県）", team: false},
